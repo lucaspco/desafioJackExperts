@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Values.pageTitle }}</title>
+    <style>
+        body {
+            font-family: {{ .Values.bodyFontFamily }};
+            background-color: {{ .Values.bodyBgColor }};
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: {{ .Values.containerBgColor }};
+            padding: {{ .Values.containerPadding }};
+            border-radius: {{ .Values.containerBorderRadius }};
+            box-shadow: {{ .Values.containerBoxShadow }};
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: {{ .Values.headingColor }};
+            font-size: {{ .Values.headingFontSize }};
+        }
+
+        p {
+            font-size: {{ .Values.paragraphFontSize }};
+            line-height: 1.6;
+            color: {{ .Values.paragraphColor }};
+            margin-bottom: 20px;
+        }
+
+        .info {
+            background-color: {{ .Values.infoBgColor }};
+            color: {{ .Values.infoTextColor }};
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            background-color: {{ .Values.buttonBgColor }};
+            color: {{ .Values.buttonTextColor }};
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: {{ .Values.buttonBorderRadius }};
+            display: inline-block;
+            margin-top: 20px;
+            font-size: {{ .Values.buttonFontSize }};
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: {{ .Values.buttonHoverBgColor }};
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: {{ .Values.imageBorderRadius }};
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ .Values.headingText }}</h1>
+        <p>{{ .Values.paragraphText }}</p>
+        <img src="{{ .Values.imageUrl }}" alt="Imagem Personalizada">
+        <div class="info">
+            <p>{{ .Values.infoText }}</p>
+        </div>
+        <a href="{{ .Values.buttonLink }}" class="cta-button">{{ .Values.buttonText }}</a>
+    </div>
+</body>
+</html>
