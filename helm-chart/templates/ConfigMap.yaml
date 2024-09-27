@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: html-config
+  labels:
+    desafio: jackexperts
+data:
+  values.yaml: |
+    pageTitle: "Minha Página Customizada"
+    bodyFontFamily: "Arial, sans-serif"
+    bodyBgColor: "#f0f0f0"
+    containerBgColor: "#ffffff"
+    containerPadding: "30px"
+    containerBorderRadius: "10px"
+    containerBoxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+    headingColor: "#2c3e50"
+    headingFontSize: "32px"
+    paragraphFontSize: "18px"
+    paragraphColor: "#666666"
+    infoBgColor: "#3498db"
+    infoTextColor: "#ffffff"
+    buttonBgColor: "#e74c3c"
+    buttonTextColor: "#ffffff"
+    buttonHoverBgColor: "#c0392b"
+    buttonBorderRadius: "5px"
+    buttonFontSize: "18px"
+    buttonLink: "https://github.com/seu-usuario/repositorio"
+    buttonText: "Ver no GitHub"
+    imageUrl: "https://via.placeholder.com/800x400"
+    imageBorderRadius: "10px"
+    headingText: "Bem-vindo à Página Customizável"
+    paragraphText: "Esta página é totalmente personalizável via ConfigMap no Kubernetes."
+    infoText: "Ajuste o conteúdo desta página diretamente no ConfigMap."

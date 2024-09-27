@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafio-jackexperts
+  labels:
+    desafio: jackexperts
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: desafio-jackexperts
+  template:
+    metadata:
+      labels:
+        app: desafio-jackexperts
+    spec:
+      containers:
+      - name: nginx
+        image: <seu-usuario-docker-hub>/desafio-jackexperts:latest
+        ports:
+        - containerPort: 80

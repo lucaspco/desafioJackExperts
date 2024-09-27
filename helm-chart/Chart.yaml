@@ -1,0 +1,4 @@
+apiVersion: v2
+name: desafio-jackexperts
+description: Uma aplicação com página HTML customizável via ConfigMap
+version: 1.0.0
