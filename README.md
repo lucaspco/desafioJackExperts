@@ -146,4 +146,4 @@ Este projeto implementa uma aplicação simples em Kubernetes com um pipeline CI
 ---
 
 **Autor:** Lucas Paiva Cidral de Oliveira  
-**Repositório GitHub:** [Link para o repositório]((https://github.com/lucaspco/desafioJackExperts))
+**Repositório GitHub:** [Link para o repositório](https://github.com/lucaspco/desafioJackExperts)
